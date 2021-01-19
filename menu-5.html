@@ -1,0 +1,80 @@
+<html>
+<style type="text/css">
+#s { font-size:20px; width:200px; text-align:center; border:thick solid white;
+cursor:hand; }
+
+#widget-slide-1 {position:relative;margin:20px auto;width:400px; height:300px;}
+#widget-slide-1 ul{position:relative;w;padding:0px;margin:0px;list-style:none;}
+#widget-slide-1 ul li{position:absolute;width:100%; height:100%; display:none; }
+#widget-slide-1 ul li.on{display:block;}
+
+#t {border-style:dotted; border-radius:20px}
+
+</style>
+<a href=tp1.html><center><img src=호계.png width=400 height=150 border=0></center></a>
+<table align=center><tr><td colspan=2>
+<font size=4 color=navy><b> 호계유적 페이지입니다.</b></font></tr></td><tr><td colspan=2>
+<table width=1000 align=center cellspacing=0 style="background-color:navy; color:white; font-family:'나눔고딕';">
+<tr height=50><td onMouseOver="this.style.backgroundColor='#4646CD',
+this.style.color='white'"
+onMouseOut="this.style.backgroundColor='navy', this.style.color='white'"
+onClick="location.href='menu-1.html'" id="s">유래</td>
+<td onMouseOver="this.style.backgroundColor='#4646CD',
+this.style.color='white'"
+onMouseOut="this.style.backgroundColor='navy', this.style.color='white'"
+onClick="location.href='menu-2.html'" id="s">자연경관</td>
+<td onMouseOver="this.style.backgroundColor='#4646CD',
+this.style.color='white'"
+onMouseOut="this.style.backgroundColor='navy', this.style.color='white'"
+onClick="location.href='menu-3.html'" id="s">맛집</td>
+<td onMouseOver="this.style.backgroundColor='#4646CD',
+this.style.color='white'"
+onMouseOut="this.style.backgroundColor='navy', this.style.color='white'"
+onClick="location.href='menu-4.html'" id="s">여가공간</td>
+<td style="background-color:#4646CD;" id="s">유적</td>
+</tr>
+</table>
+<br>
+</td></tr></table>
+<table border=1 width=1000 align=center>
+<tr height=50><td colspan=2 style="font-size:26px; font-family:'나눔고딕'; background-color:#DAD9FF;"><strong><center>공룡발자국 화석</center></strong></td></tr>
+<tr height=350><td  style="border-style:none; font-size:18px; font-family:'나눔고딕'; padding:20px;">호계리 공룡발자국 화석은 대구와 마산을 잇는 구마고속도로 확 포장 공사로 반견되었다<br>
+<br>약 1억년 전의 중생대 백악기의 공룡발자국이라고 한다. 지름 9cm정도의 원형 새끼 공룡 발자국 화석도 발견되었다고 한다. <br>
+<br>이 곳은 학생들의 체험 학습장으로 많이 이용되고 있고 실제로 가보면 아주 많은 공룡발자국을 선명하게 볼 수 있으며 공룡이 이동한 방향도 알 수 있다.<br>
+공룡발자국 옆에 공룡들에 대한 설명도 같이 적혀있어 신기하고 흥미로운 체험을 할 수 있는 공간이다. </td>
+
+<td width=400>
+<div id="widget-slide-1">
+    <ul>
+        <li class="on"><img src=공룡발자국3.png width=400 height=300 border=1></li>
+        <li><img src=공룡발자국2.png width=400 height=300 border=1></li>
+        <li><img src=공룡발자국1.png width=400 height=300 border=1></li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+<!--
+    function setSlide(){// 동작 함수 생성
+        var box   = document.getElementById("widget-slide-1");
+        var elm   = box.getElementsByTagName( 'li' );
+        var max   = elm.length-1;
+        var now   = 0;
+        var next  = 0;
+        var tmr   = null;
+        var timr  = 2000;
+        function change(){if(next > max) next = 0; else if(next < 0) next = max; for(var i=0; i <= max; i++ )elm[i].className = "";elm[next].className = "on";now = next;}
+        function befor(){next--; change();}
+        function after(){next++; change();}
+        function stop(){ clearInterval(tmr);}
+        function start(){tmr = setInterval(function(){after();}, timr); }
+        if(max>0){start();}
+    }
+    setSlide();// 실행
+//-->
+</script></td></tr>
+<tr height=100><td  style="border-style:none;">
+<table width=600 border=1 id="t"><tr height=80><td  style="border-style:none; font-size:16px; font-family:'나눔고딕'; text-align:center;">
+                                               위치 : 경상남도 창원시 마산회원구 내서읍 호계리 산50-1<br><b>경상남도 기념물 제170호</b></td></tr></table></td>
+
+<td style="font-size:16px; font-family:'나눔고딕';"><a href=https://map.naver.com/v5/entry/place/15776223?c=14305986.692184683,4199066.395651035,13,0,0,0,dh&placePath=%2Fhome%3Fentry=plt>
+<img src=공룡.png width=100 height=100></a>공룡을 클릭하면 위치가 나옵니다.</td></tr></table>
